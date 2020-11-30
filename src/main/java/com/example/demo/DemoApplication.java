@@ -24,6 +24,7 @@ public class DemoApplication implements CommandLineRunner {
 		produitRepositry.save( new Produit(null,"HP", 4500, 100 ) );
 		produitRepositry.save( new Produit(null,"Lenovo", 5000, 200 ) );
 		produitRepositry.save( new Produit(null,"Azus", 5600, 300 ) );
+		produitRepositry.save( new Produit(null,"versus", 600, 30 ) );
 		produitRepositry.findAll().forEach( p -> {System.out.println(p.toString());} );
 	}
 }
